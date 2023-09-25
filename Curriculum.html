@@ -14,12 +14,175 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-      html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    
+  html,body,h1,h2,h3,h4,h5,h6 {
+font-family: "Serif";
+format('ttf, otf');
+}
+
+figure{
+margin-left:0;
+}
+
+.LogoFacu{
+margin: auto;
+border-radius: 50px;
+border: solid 1px #000000;
+}
+
+.LogoDio{
+margin: auto;
+border-radius: 50px;
+border: solid 1px #DC143C;
+}
+
+.FotoPerfil{
+display:flex;
+margin: auto;
+border-radius: 50px;
+margin-left: 25px;
+border: solid 1px #FF0000;
+}
 
 
-    figure{
-     margin-left: 0;
-    }
+.Sobre{
+display:flex;
+align-content: end;
+background-color:#000000;
+border-radius: 10px;
+height: 100px;
+margin-top: 10px;
+border: solid 1px #FF0000;
+}
+
+.TitleIconGitHub{
+display:flex;
+justify-content: start;
+align-items: center;
+margin-left: 15px;
+}
+
+.TitleLogoDio{
+display:flex;
+justify-content: start;
+align-items: center;
+}
+
+.TitleDio{
+color: #DC143C;
+}
+
+.TitleLogoExperiencia{
+display:flex;
+justify-content: start;
+align-items: center;
+}
+
+.LogoExperiencia{
+border-radius: 10px;
+border: solid 1px #008000;
+backgroun-color: #000000;
+}
+
+
+.LogoGit{
+border-radius: 40px;
+border: solid 1px #FF0000;
+backgroun-color: #000000;
+}
+
+.TitleProjetos{
+display:flex;
+color:#FF0000;
+margin-left: 0;
+}
+
+.ColorExperiencia{
+color:#008000;
+}
+
+.ColorCetificateFormacao{
+color:#FF8C00;
+border-radius: 5px;
+}
+
+.Certificate{
+display:flex;
+background-color:#000000;
+border: solid 1px #808080;
+margin-left: 0;
+border-radius: 10px;
+}
+
+.ColorADSTitle{
+color:#228B22;
+}
+
+.ColorSobre{
+color:#FF0000;
+}
+
+.TitleName{
+background-color:#000000;
+border-radius: 7px;
+color: #FF0000;
+height: 80px;
+margin-top: 10px;
+border: solid 1px #FF0000;
+}
+
+
+.ColorEducacao{
+color:#FF0000;
+}
+
+.TitleEducacao{
+ display: flex;
+background-color:#000000;
+border-radius: 10px;
+min-height: 70px;
+margin-top: 10px;
+border: solid 1px #FF0000;
+}
+
+
+.ColorExperiencias{
+color:#FF0000;
+}
+
+.ColorGraduacao{
+color:#FF0000;
+}
+
+.TitleGraduacao{
+display: flex;
+background-color:#000000;
+border-radius: 10px;
+height: 70px;
+margin-top: 10px;
+border: solid 1px #FF0000;
+}
+
+
+
+.TitleExperiencias{
+background-color:#000000;
+border-radius: 10px;
+height: 70px;
+margin-top: 10px;
+border: solid 1px #FF0000;
+}
+
+.UnionGitLogoTitle{
+display:flex;
+background-color:#000000;
+border-radius: 10px;
+height: 70px;
+margin-top: 10px;
+border: solid 1px #FF0000;
+}
+
+
     </style>
     
   </head>
@@ -38,7 +201,8 @@
           <div class="w3-white w3-text-grey w3-card-4">
             <!-- @falvojr: This container has been modified to not use a profile picture. -->
             <div class="w3-container">
-              <h2>Wagner Alexandre Ribeiro</h2>
+              <h2><i class="TitleName">
+Wagner A. Ribeiro</i></h2>
             </div>
             <div class="w3-container">
               <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Transição de carreira Disponível para novas Oportunidades</p>
@@ -76,15 +240,15 @@
               </p>
               <p>Português</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%">100%</div>
+                <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"> 100% </div>
               </div>
               <p>Inglês</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-teal" style="height:24px;width:30%">30%</div>
+                <div class="w3-round-xlarge w3-teal" style="height:24px;width:30%;"> 30% </div>
               </div>
               <p>Espanhol</p>
               <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-teal" style="height:24px;width:10%">10%</div>
+                <div class="w3-round-xlarge w3-teal" style="height:24px;width:10%"> 10% </div>
               </div>
               <br>
             </div>
@@ -97,30 +261,68 @@
         <div class="w3-twothird">
     
           <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Sobre</h2>
+              
+<div class="Sobre">
+            <h2 class="w3-text-grey w3-padding-16">
+
+<i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-teal">
+</i><b class="colorSobre">Sobre</b></h2>
+
+<figure>
+<img class="FotoPerfil"
+src="https://hermes.dio.me/users/student/97ddaa7c-fbf0-4e2b-a3c9-5f50eaec8283.jpg" alt="FotoPerfil"
+width="60" height="60">
+</figure>
+</div class="Sobre">
             <p>
 Atuo como (Vigilante/Segurança) a 12 anos, sou responsável por garantir a segunça de patrimónios e pessoas dentro do local, realizar rondas, triagem de pessoas e objetos, controle de portaria, acesso e saida de visitantes e monitoramento de imagens, previnir vandalismos e possíveis assaltos, furtos ou roubos. Procurando uma oportunidade para migrar de profissão e entrar na área de tecnologia na qual eu me indentifiquei e me apaixonei, quero expandir eu conhecimento na área e me tornar um desenvolvedor FullStack (Web/Mobile/Games/IA/etc...) a junção de uma mente criativa como a minha e as infinitas possibilidades que a tecnologia pode alcançar podem gerar infinitas 💡idéias. Tenho sede de conhecimento tecnológico.</p>
-          </div>
+</div>
+
+
 
           <div class="w3-container w3-card w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiências
+                  <div class="TitleExperiencias">
+              <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
+<b class="ColorExperiencias">
+Experiências</b>
+  </div class="TitleExperiencias">
             </h2>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b>Atualmente Free Lancer em Front-End</b></h5>
+                
+   <div class="TitleLogoExperiencia">
+<figure>
+<img class="LogoExperiencia"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDVknv0LVlDx2B1x2JtK6pbobsVdmTierag&usqp=CAU" alt="LogoDio" width="280" height="80">
+<figcaption>
+<h5><b class="ColorExperiencia">FreeLancer Front-End</b></h5></figcaption>
+</figure>
+</div>
+                
+
               <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Abril 2023 <span class="w3-tag w3-teal w3-round">Disponível</span></h6>
               <p>Não Possuo experiência profissional com Desenvolvimento porém estou deixando o Link do meu GitHub e postando projetos e certificados de cursos e idéias desenvolvidas com a DIO, Udemy e também com outras Etechs, sempre disponível para novas oportunidades. </p>
               <hr>
             </div>
-
           </div>
+  
   
           <div class="w3-container w3-card w3-white">
             <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Educação
+                <div class="TitleEducacao">
+              <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b class="ColorEducacao">Cursos de Tecnologia (T.I)</b>
+              </div class="TitleEducacao">
             </h2>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b>Digital Innovation One (DIO)</b></h5>
+                
+              <div class="TitleLogoDio">
+<figure>
+<img class="LogoDio"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNtCiUopHFBFbVS288obBtswqLhebIzjq4rQ&usqp=CAU" alt="LogoDio" width="60" height="60">
+</figure>
+<div class="TitleDio">
+<h5><b>Digital Innovation One (DIO)</b></h5></div></div>
+              
               <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>INICIO - <span class="w3-tag w3-teal w3-round">Atual</span></h6>
               <p>
                 Maior plataforma de educação aberta em TI da América Latina, com mais 1 milhão de usuários. 
@@ -129,27 +331,55 @@ Atuo como (Vigilante/Segurança) a 12 anos, sou responsável por garantir a segu
               </p>
               
 <figure>
-<img src="https://hermes.dio.me/certificates/cover/7C5CC723.jpg" alt="Cerificado de Formação em Lógica de Programação DIO" width="180" height="120">
-<figcaption>Formação em Lógica de Programação (41h)</figcaption>
+<img src="https://hermes.dio.me/certificates/cover/7C5CC723.jpg" 
+class="Certificate"
+alt="Cerificado de Formação em Lógica de Programação DIO" width="180" height="120">
+<figcaption>
+<b class="ColorCetificateFormacao">Formação em Lógica de Programação (41h)</b></figcaption>
 </figure>
+
 
       <hr>
             </div>
             <div class="w3-container">
-              <h5 class="w3-opacity"><b>Faculdade Descomplica </b></h5>
+
+    <div class="TitleGraduacao">
+              <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><h2>
+<b class="ColorGraduacao">Graduação</b>
+</h2></div class="TitleGraduacao">
+
+<figure>
+<img class="LogoFacu"
+src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_-_Descomplica.png" alt="LogoFacu"
+width="250" height="30">
+<figcaption><h5><b>Faculdade Digital </b></h5></figcaption>
+</figure>
+
+
               <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023 - 2027</h6>
-              <p>Analise de Sistemas</p>
+              <p><h4><i class="ColorADSTitle"><b>Analise de Sistemas</b></i></h4></p>
             </div>
           </div>
 
           <div class="w3-container w3-card w3-white w3-margin-bottom">
             <h2 class="w3-text-grey w3-padding-16">
-              <i class="fa fa-git fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projetos
+                
+                
+<div class="UnionGitLogoTitle">
+<div class=" TitleIconGitHub">
+<figure>
+<img class="LogoGit"
+src="https://logodix.com/logo/64629.png" alt="LogoGit" width="60" height="60">
+</figure>       
+<div class="TitleProjetos"><b>Projetos</b></div>
+</div>
+          </div class="UnionGitLogoTitle">
+          
             </h2>
             <div class="w3-container">
               <h6 class="w3-text-teal">
                 <i class="fa fa-github fa-fw w3-margin-right"></i>
-                <a href="https://github.com/FullStackMagickDeveloper/" target="_blank">WAGNER_GITHUB/REPO</a>
+                <a href="https://github.com/FullStackMagickDeveloper/" target="_blank"><i><b>WAGNER_GITHUB/REPO</b></i></a>
               </h6>
               <hr>
             </div>
