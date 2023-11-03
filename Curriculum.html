@@ -1,411 +1,1391 @@
+<!---------------------------------------------------------------->
 <!DOCTYPE html>
-<!-- @falvojr: Reference article https://www.w3schools.com/howto/howto_website_create_resume.asp -->
-<!-- @falvojr: Useful link to use fontawesome (fa) icons: https://fontawesome.com/v4/icons/ -->
-<html lang="pt-BR">
+<!---------------------------------------------------------------->
+<!----------------------------[HTML-INICIO]----------------------->
+<html lang = "pt-br">
+<!---------------------------------------------------------------->
+<!----------------------------[HEAD-INICIO]----------------------->
+<head>
+<!---------------------------------------------------------------->
+<!---------------------------[META-CHARSET]-----------------------> 
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
 
-  <head>
-    <title>WAGNER ALEXANDRE RIBEIRO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <meta name="viewport" content"width=980, height=1524 pixel ratio3">
+<!---------------------------------------------------------------->
+<!---------------------------[TITULO-SITE]------------------------>
+<title> CURRICULUM-WAGNER-2024 </title>
+<!---------------------------------------------------------------->
 
-    <style>
-    
-  html,body,h1,h2,h3,h4,h5,h6 {
+<link rel="icon" type="image/x-icon" href="
+http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Formatura.png">
+
+<link rel="icon" type="image/x-icon" href="
+file:///C:/Users/evald/OneDrive/%C3%81rea%20de%20Trabalho/Wagner/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Formatura.png">
+<!--------------------[INICIO-FOLHA-CSS-INTERNO]------------------>
+<!------style type="text/css">
+
+body{
+background-image:url("");
+background-size: cover; /*(Ajusta o tamanho da imagem ao container)*/
+background-image: repeat; /*(Não permite a Repetição)*/
+background-position:top; center ; /*(Ajusta a imagem ao centro centro)*/
+/*-webkit-text-stroke: 0.5px #F8F8FF; (Insere uma borda no Texto)*/
+border: solid 1px #DCDCDC;
+border-radius: 5px;
+margin: 4px;
+padding: 10px;
+width: auto;
+height: auto;
+overflow-x: auto;  /*(Rolagem Horizontal Oculta)*/
+overflow-y: auto;  /*(Rolagem Vertical)*/
+font: 20px small-caps;
+background-color: black;
+Color: black;
+}
+  
+h1,h2,h3,h4,h5,h6 {
+display: flex;
+justify-content: center;
 font-family: "Serif";
 format('ttf, otf');
 }
 
+
+/*--------------------------[CSS-FONTS]--------------------------*/
+  @font-face {
+  font-family: 'Arial, Verdana, Helvetica, Trebuchet MS, Georgia, Courier New, Comic Sans MS, Brush Script MT, Impact, Lucida Sans, Colibri, Comic Sans, Constantia, Sans-serif, Serif';
+/*---------------------------------------------------------------*/
+    src: url('http://localhost:2435/storage/emulated/0/TextEdit/CURSO+WEB+2023/Fonts+CSS/liberationSerif/LiberationSerif-Bold.ttf')
+/*---------------------------------------------------------------*/
+  src: url('http://localhost:2435/storage/emulated/0/TextEdit/CURSO+WEB+2023/Fonts+CSS/liberationSerif/LiberationSerif-BoldItalic.ttf') 
+/*---------------------------------------------------------------*/
+  src: url('http://localhost:2435/storage/emulated/0/TextEdit/CURSO+WEB+2023/Fonts+CSS/liberationSerif/LiberationSerif-Italic.ttf') 
+/*---------------------------------------------------------------*/
+  src: url('http://localhost:2435/storage/emulated/0/TextEdit/CURSO+WEB+2023/Fonts+CSS/liberationSerif/LiberationSerif-Regular.ttf') 
+/*---------------------------------------------------------------*/
+  format('ttf, otf');
+  }
+
+/*
+  Esta e uma maneira direta de  editar o estilo de fonte, assim como e feito com 
+  o estilo de borda.
+
+/*-----------------------------------------------------------------
+  .ManeiraDireta{
+  font: italic bold 25px Serif;
+  }
+-----------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/*---------------------[CSS-SCROLLBAR-ALL]-----------------------*/
+*::-webkit-scrollbar {
+  width: 6px; 
+  height: 6px;             /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #F5F5F5;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 1px solid #A9A9A9;  /* creates padding around scroll thumb */
+}
+
+/*---------------------------------------------------------------*/
+
+.ContainerAsideMain{
+display: flex;
+flex-wrap: wrap;
+max-width: 1320px;
+height: auto;
+margin-bottom: 5px;
+}
+
+
+.Aside{
+background-color: #A9A9A9;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+max-width: 200px;
+height: auto;
+margin: 3px;
+padding:3px;
+}
+
+.ContainerImagePerfil{
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: center;
+margin-left: 250px;
+}
+
+
+.ContContainerAll{
+background-color: rgb(248,248,248);
+border: 1px solid #1C1C1C; /*#A9A9A9*/
+border-radius: 15px;
+padding-left: 3px;
+padding: 3px;
+margin-bottom: 3px;
+}
+
+.ContainerAll{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+width:auto;
+height: auto;
+margin-bottom: 5px;
+}
+
+
+.ContainerAllSkills{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+width:auto;
+height: auto;
+}
+
+.TextName{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+color: #363636;
+font-weight: bold;
+font-size: 30px;
+margin-bottom: 3px;
+height: 60px;
+}
+
+.Text{
+display: flex;
+flex-wrap: wrap;
+color: #363636;
+font-weight: bold;
+}
+
+.TextSkills{
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+color: #363636;
+font-weight: bold;
+font-size: 30px;
+}
+
+.TextAllSkills{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: flex-start;
+color: #363636;
+font-weight: bold;
+}
+
+
+.IconAll{
+border-radius: 7px;
+width: 40px;
+height: 40px;
+margin: 3px;
+}
+
+
+
+.Html5{
+border-radius: 7px;
+width: 50px;
+height: 50px;
+margin: 3px;
+}
+
+.CSS3, .javaScript{
+border-radius: 7px;
+width: 40px;
+height: 40px;
+margin: 3px;
+}
+
+.Kotlin{
+border-radius: 7px;
+width: 60px;
+height: 65px;
+margin: 3px;
+}
+
+.CeuAzul{
+border-radius: 15px;
+width: 220px;
+height: 65px;
+margin-right: 3px;
+}
+
+
+.Portugues{
+border-radius: 7px;
+width: 50px;
+height: 55px;
+margin: 3px;
+}
+
+.Ingles{
+border-radius: 7px;
+width: 60px;
+height: 60px;
+margin: 3px;
+}
+
+
+.Espanhol{
+border-radius: 7px;
+width: 55px;
+height: 55px;
+margin: 3px;
+}
+
+
+.IconSkills{
+border-radius: 7px;
+width: 55px;
+height: 52px;
+margin-left: 0px;
+}
+
+
 figure{
-margin-left:0;
+margin-left: 0px;
+margin-right: 3px;
 }
 
-.LogoFacu{
-margin: auto;
-border-radius: 50px;
-border: solid 1px #000000;
+
+.ContainerPorcent{
+background-color: #DCDCDC;
+border: 1px solid #C0C0C0;
+border-radius: 20px;
+padding: 0.2px;
+height: 20px;
 }
 
-.LogoDio{
-margin: auto;
-border-radius: 50px;
-border: solid 1px #DC143C;
+.Porcent{
+display: flex;
+background-color: #32CD32;
+border: 1px solid whitesmoke;
+border-radius: 20px;
+height: 18px;
+}
+
+.PorcentNumber{
+display: flex;
+margin-left: 5px;
+color: white;
+-webkit-text-stroke: 0.1px #1C1C1C;
+font-size: 15px;
+}
+
+
+.Main{
+background-color: #A9A9A9;
+border-radius: 15px;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+max-width: 1096px;
+min-width: 300px;
+height: auto;
+margin: 3px;
+padding:3px;
 }
 
 .FotoPerfil{
-display:flex;
-margin: auto;
-border-radius: 50px;
-margin-left: 25px;
-border: solid 1px #FF0000;
-}
-
-
-.Sobre{
-display:flex;
-background-color:#000000;
-border-radius: 10px;
-height: 100px;
-margin-top: 10px;
-border: solid 1px #FF0000;
-}
-
-.TitleIconGitHub{
-display:flex;
-justify-content: start;
-align-items: center;
-margin-left: 15px;
-}
-
-.TitleLogoDio{
-display:flex;
-justify-content: start;
-align-items: center;
-}
-
-.TitleDio{
-color: #DC143C;
-}
-
-.TitleLogoExperiencia{
-display:flex;
-justify-content: start;
-align-items: center;
-}
-
-.LogoExperiencia{
-border-radius: 10px;
-border: solid 1px #008000;
-backgroun-color: #000000;
-}
-
-
-.LogoGit{
-border-radius: 40px;
-border: solid 1px #FF0000;
-backgroun-color: #000000;
-}
-
-.TitleProjetos{
-display:flex;
-color:#FF0000;
-margin-left: 0;
-}
-
-.ColorExperiencia{
-color:#008000;
-}
-
-.ColorCetificateFormacao{
-color:#FF8C00;
+display: flex;
+margin-top: 3px;
 border-radius: 5px;
+border: 1.2px solid gray;
+width: 90px;
+height: 100px;
+}
+
+
+.ProgramLogo{
+display: flex;
+border-radius: 15px;
+margin: 3px;
+width: 1080px;
+height: 200px;
+}
+
+
+.ContainerBackGroundProgram{
+background-image:url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcomunicandoqueesgerundio.es%2Fwp-content%2Fuploads%2F2014%2F05%2Fclaves-para-elegir-al-desarrollador-web-adecuado-1080x563.jpg&f=1&nofb=1&ipt=ee8229d0e6d02fcc16eda60f5c36597f1cde9b0f51d989e48bcec5c1a4a6d4e7&ipo=images");
+background-size: cover; /*(Ajusta o tamanho da imagem ao container)*/
+background-image: norepeat; /*(Não permite a Repetição)*/
+background-position: center; center ; /*(Ajusta a imagem ao centro centro)*/
+width: 1080px;
+height: 200px;
+}
+
+.DioLogo{
+display: flex;
+width: 200px;
+height: 45px;
+margin-left: 10px ;
+}
+
+.TextSobreFoto{
+background-color: #1C1C1C;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-radius: 10px;
+color: red;
+width: auto;
+max-height: 80px;
+}
+
+
+.TextSobreFotoExp{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+color: lime;
+-webkit-text-stroke: 1px green;
+width: auto;
+min-height: 80px;
+height: auto;
+}
+
+
+.TextSobreFotoExp2{
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+color: red;
+width: auto;
+min-height: 80px;
+height: auto;
+}
+
+.TextSobreFoto1{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+color: #1C1C1C;
+width: auto;
+min-height: 80px;
+height: auto;
+}
+
+.TextSobre{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-left: 10px;
+font-size: 35px;
+font-weight: bold;
+width: auto;
+min-height: 80px;
+height: auto;
+}
+
+
+.TextExperience{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-left: 10px;
+font-size: 35px;
+font-weight: bold;
+width: auto;
+height: auto;
+}
+
+
+.TextExperience5{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-left: 10px;
+font-size: 35px;
+font-weight: bold;
+width: auto;
+height: auto;
+color: white;
+}
+
+.TextExperience0{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-left: 350px;
+font-size: 35px;
+font-weight: bold;
+width: auto;
+height: auto;
+}
+
+.TextExperience00{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-left: 350px;
+font-size: 35px;
+font-weight: bold;
+width: auto;
+height: auto;
+}
+
+
+.TextExperience2{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+color: gray;
+margin-left: 10px;
+font-size: 25px;
+font-weight: bold;
+width: auto;
+height: auto;
+}
+
+.TextExperience3{
+background-color: lime;
+border-radius: 10px;
+color: black;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+margin-left: 10px;
+font-size: 25px;
+font-weight: bold;
+width: auto;
+height: auto;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+
+.ContainerFacul{
+border-radius: 15px;
+background-color: red;
+margin-bottom: 3px;
+height: 70px;
+}
+
+
+.TextSobreFoto2{
+background-color: #1C1C1C;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+color: red;
+width: auto;
+max-height: 80px;
+}
+
+.Footer{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgb(248,248,248);
+border: solid 3px #A9A9A9;
+border-radius: 17px;
+width: auto;
+max-height: 100px;
+}
+
+.SubContainerFooter{
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: center;
+background-color: rgb(248,248,248);
+border-radius: 15px;
+width:auto;
+max-height: 95px;
+padding: 3px;
+}
+
+
+.ContainerRedeSocial{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+max-height: 50px;
+margin-bottom: 65px;
+}
+
+
+.TitleRedeSocial{
+margin-top: 50px;
+font: italic bold 25px Serif;
+height: 15px;
+}
+
+
+.ImageGitHub{
+background-color: black;
+display: flex;
+border-radius: 10px;
+border: 1.5px solid #0000CD;
+margin-right: 30px;
+width: 45px;
+height: 47px;
+}
+
+
+.IconMaleta{
+border-radius: 20px;
+width: 70px;
+height: 70px;
+margin-left: 20px;
+margin-right: 30px;
+}
+
+.GitHub{
+border-radius: 20px;
+width: 70px;
+height: 70px;
+margin-left: 20px;
+margin-right: 30px;
+}
+
+
+.Formatura{
+border-radius: 20px;
+width: 80px;
+height: 70px;
+margin-left: 20px;
+margin-right: 300px;
+}
+
+.ContainerIconTitle{
+background-color: gray;
+border-radius: 15px;
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: flex-start;
+height: 60px;
+margin-bottom: 3px;
+}
+
+
+.ImageLinkedin{
+border-radius: 15px;
+}
+
+
+.ImageIstagram{
+border-radius: 15px;
+margin-left: 0px;
+}
+
+.ContainerIconTitle2{
+background-color: black;
+border-radius: 15px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: flex-start;
+height: 70px;
+margin-bottom: 3px;
+padding: 0px;
+}
+
+.IconCalend{
+display: flex;
+border-radius: 15px;
+margin-left: 15px;
+width: 70px;
+height: 80px;
+margin-bottom: 15px;
 }
 
 .Certificate{
-display:flex;
-background-color:#000000;
-border: solid 1px #808080;
-margin-left: 0;
+border: solid 1.7px gold;
 border-radius: 10px;
 }
 
-.ColorADSTitle{
-color:#228B22;
-}
 
-.ColorSobre{
-color:#FF0000;
-}
-
-.TitleName{
-background-color:#000000;
-border-radius: 7px;
-color: #FF0000;
-height: 80px;
-margin-top: 10px;
-border: solid 1px #FF0000;
+.IconGit{
+border-radius: 50px;
+margin-left: 10px;
 }
 
 
-.ColorEducacao{
-color:#FF0000;
+.Descomplica{
+border-radius: 15px;
+margin-left: 15px;
 }
 
-.TitleEducacao{
- display: flex;
-background-color:#000000;
-border-radius: 10px;
-min-height: 70px;
-margin-top: 10px;
-border: solid 1px #FF0000;
-}
-
-
-.ColorExperiencias{
-color:#FF0000;
-}
-
-.ColorGraduacao{
-color:#FF0000;
-}
-
-.TitleGraduacao{
-display: flex;
-background-color:#000000;
-border-radius: 10px;
-height: 70px;
-margin-top: 10px;
-border: solid 1px #FF0000;
+.ContainerFacul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 
-
-.TitleExperiencias{
-background-color:#000000;
-border-radius: 10px;
-height: 70px;
-margin-top: 10px;
-border: solid 1px #FF0000;
+a{
+text-decoration: none;
 }
+/*---------------------[CSS-SCROLLBAR-ALL]-----------------------*/
+/*---------------------------------------------------------------*/
+ </style---------->
+<!--------------------[FIM-FOLHA-CSS-INTERNO]--------------------->
+<!---------------------------------------------------------------->
+<!-------------------[LINK-CSS-EXTERNO-CELL]---------------------->
+<link rel="stylesheet" type="text/css" href="   
+http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/CSS/CurriculumHTML2024.css">
 
-.UnionGitLogoTitle{
-display:flex;
-background-color:#000000;
-border-radius: 10px;
-height: 70px;
-margin-top: 10px;
-border: solid 1px #FF0000;
-}
+<link rel="stylesheet" type="text/css" href="   
+file:///C:/Users/evald/OneDrive/%C3%81rea%20de%20Trabalho/Wagner/ALLFILES-EDIT/CURSO-HTML5-DIO/CSS/CurriculumHTML2024.css">
+<!---------------------------------------------------------------->
+<!---------------------------------------------------------------->
+<!-------------------------[SCRIPT-JS]---------------------------->
+<script type="text/javascript">
+alert('Cirriculum Online - Wagner A. Ribeiro')
+</script>
+<!-------------------------[SCRIPT-JS]---------------------------->
+<!---------------------------------------------------------------->
+</head>
+<!--------------------------[HEAD-FIM]---------------------------->
+<!---------------------------------------------------------------->
+<!------------------------[BODY-INICIO]--------------------------->
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+<!---------------------------------------------------------------->
+<!--------------------[CONTEUDO-BODY-INICIO]---------------------->
+
+<!---------------------[INICIO-COLUNA-ASIDE]---------------------->
+<div class="ContainerAsideMain">
 
 
-    </style>
+<aside class="Aside">
+
+<div class="ContContainerAll">
+
+<div class="ContainerAll">
+
     
-  </head>
+<img class="IconAll" title="MaletaTrabalho" alt="MaletaDeTrabalho"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Maleta.png" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Maleta.jpg"----------------------------------->
 
-  <body class="w3-light-grey" cz-shortcut-listen="true">
-  
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
-  
-      <!-- The Grid -->
-      <div class="w3-row-padding">
-  
-        <!-- Left Column -->
-        <div class="w3-third">
-  
-          <div class="w3-white w3-text-grey w3-card-4">
-            <!-- @falvojr: This container has been modified to not use a profile picture. -->
-            <div class="w3-container">
-              <h2><i class="TitleName">
-Wagner A. Ribeiro</i></h2>
-            </div>
-            <div class="w3-container">
-              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Transição de carreira Disponível para novas Oportunidades</p>
-              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Estudante de Desenvolvimento FullStack</p>
-              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>São Paulo - SP </p>
-              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>war.professionalfull.org@gmail.com</p>
-              <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i> +55 (11) 98942-6811</p>
-              <hr>
-  
-              <p class="w3-large">
-                <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b>
-              </p>
-              <p>HTML</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
-              </div>
-              <p>CSS/FLEXBOX</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
-              </div>
-              <p>Javascript</p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-              </div>
-              <p>Kotlin </p>
-              <div class="w3-light-grey w3-round-xlarge w3-small">
-                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:30%">30%</div>
-              </div>
-              <br>
-                  
- <hr color ="#696969">
-     
-              <p class="w3-large w3-text-theme">
-                <b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Idiomas</b>
-              </p>
-              <p>Português</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"> 100% </div>
-              </div>
-              <p>Inglês</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-teal" style="height:24px;width:30%;"> 30% </div>
-              </div>
-              <p>Espanhol</p>
-              <div class="w3-light-grey w3-round-xlarge">
-                <div class="w3-round-xlarge w3-teal" style="height:24px;width:10%"> 10% </div>
-              </div>
-              <br>
-            </div>
-          </div><br>
-  
-          <!-- End Left Column -->
-        </div>
-  
-        <!-- Right Column -->
-        <div class="w3-twothird">
+<span class="Text">
+Transição de carreira Disponível para novas Oportunidades
+</span class="Text">
+
+
+</div class="ContainerAll">
+
+
+
+<div class="ContainerAll">
+
+<img class="IconAll" title="MaletaTrabalho" alt="MaletaDeTrabalho"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Maleta.png" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Maleta.jpg"----------------------------------->
+
+
+<span class="Text">
+Estudante de Desenvolvimento Web, Mobile, Desktop, FullStack
+</span class="Text">
+
+</div class="ContainerAll">
+
+
+
+<div class="ContainerAll">
     
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-              
-<div class="Sobre">
-            <h2 class="w3-text-grey w3-padding-16">
+<img class="IconAll" title="Localizacao" alt="Localizacao"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Localizacao.jpg" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Localizacao.jpg"-------------------------------------------------->
 
-<i class="fa fa-terminal fa-fw w3-margin-right w3-xxlarge w3-text-teal">
-</i><b class="ColorSobre">Sobre</b></h2>
+<span class="Text">
+São Paulo - SP (Campo Limpo)
+</span class="Text">
 
-<figure>
-<img class="FotoPerfil"
-src="https://hermes.dio.me/users/student/97ddaa7c-fbf0-4e2b-a3c9-5f50eaec8283.jpg" alt="FotoPerfil"
-width="60" height="60">
-</figure>
-</div class="Sobre">
-            <p>
+</div class="ContainerAll">
+
+
+<div class="ContainerAll">
+
+    
+<img class="IconAll" title="Email" alt="Email"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Email.jpg" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Email.jpg"----------------------------------->
+
+<span class="Text">
+war.professionalfull .org@gmail.com
+</span class="Text">
+
+</div class="ContainerAll">
+
+
+
+<div class="ContainerAll">
+    
+<img class="IconAll" title="WhatsApp" alt="WhatsApp"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Whats.jpg" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Whats.jpg"----------------------------------->
+
+<span class="Text">
++55 (11) 98942-6811
+</span class="Text">
+</div class="ContainerAll">
+
+</div class="ContContainerAll">
+
+
+
+<div class="ContContainerAll">
+
+<div class="ContainerAll">
+    
+    
+<img class="IconSkills" title="IconSkills" alt="IconSkills"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Settings.png" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Settings.png"----------------------------------------------------->
+
+<span class="TextSkills">
+Skills
+</span class="TextSkills">
+</div class="ContainerAll">
+
+<hr>
+
+<div class="ContainerAllSkills">
+
+<span class="TextAllSkills">
+
+<img class="Html5" title="Html5" alt="Html5"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Html5.png" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Html5.png"----------------------------------------------------->
+
+
+HTML5
+</span class="ContainerAllSkills">
+<div class="ContainerPorcent">
+<div class="Porcent" style="width:80%">
+  <span class="PorcentNumber">
+  80%
+  </span class="PorcentNumber">
+</div class="Porcent">
+</div class="ContainerPorcent">
+</div class="ContainerAllSkills">
+<br>
+
+
+<div class="ContainerAllSkills">
+<span class="TextAllSkills">
+
+<img class="CSS3" title="CSS" alt="CSS"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\CSS3.png" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/CSS3.png"----------------------------------------------------->
+
+CSS/FLEXBOX
+</span class="ContainerAllSkills">
+<div class="ContainerPorcent">
+<div class="Porcent" style="width:50%">
+  <span class="PorcentNumber">
+  50%
+  </span class="PorcentNumber">
+</div class="Porcent">
+</div class="ContainerPorcent">
+</div class="ContainerAllSkills">
+<br>
+
+
+<div class="ContainerAllSkills">
+<span class="TextAllSkills">
+
+<img class="javaScript" title="javaScript" alt="javaScript"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\javaScript.jpg" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/javaScript.jpg"----------------------------------------------------->
+
+JAVA SCRIPT
+</span class="ContainerAllSkills">
+<div class="ContainerPorcent">
+<div class="Porcent" style="width:70%">
+  <span class="PorcentNumber">
+  70%
+  </span class="PorcentNumber">
+</div class="Porcent">
+</div class="ContainerPorcent">
+</div class="ContainerAllSkills">
+<br>
+
+
+<div class="ContainerAllSkills">
+<span class="TextAllSkills">
+
+<img class="Kotlin" title="Kotlin" alt="Kotlin"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Kotlin3.png" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Kotlin3.png"----------------------------------------------------->
+
+KOTLIN
+</span class="ContainerAllSkills">
+<div class="ContainerPorcent">
+<div class="Porcent" style="width:50%">
+  <span class="PorcentNumber">
+  50%
+  </span class="PorcentNumber">
+</div class="Porcent">
+</div class="ContainerPorcent">
+</div class="ContainerAllSkills">
+
+</div class="ContContainerAll">
+
+
+
+<div class="ContContainerAll">
+
+<div class="ContainerAll">
+
+<img class="CeuAzul" title="CeuAzul" alt="CeuAzul"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\CeuAzul.png" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/CeuAzul.png"----------------------------------------------------->
+
+<span class="TextSkills">
+Idiomas
+</span class="TextSkills">
+</div class="ContainerAll">
+
+<hr>
+
+<div class="ContainerAllSkills">
+<span class="TextAllSkills">
+
+<img class="Portugues" title="Portugues" alt="Portugues"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Portugues.png" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Portugues.png"----------------------------------------------------->
+
+
+PORTUGUES
+</span class="ContainerAllSkills">
+<div class="ContainerPorcent">
+<div class="Porcent" style="width:99.6%">
+  <span class="PorcentNumber">
+  100%
+  </span class="PorcentNumber">
+</div class="Porcent">
+</div class="ContainerPorcent">
+</div class="ContainerAllSkills">
+
+
+<div class="ContainerAllSkills">
+<span class="TextAllSkills">
+
+<img class="Ingles" title="Ingles" alt="Ingles"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Ingles.png" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Ingles.png"----------------------------------------------------->
+
+INGLES
+</span class="ContainerAllSkills">
+<div class="ContainerPorcent">
+<div class="Porcent" style="width:50%">
+  <span class="PorcentNumber">
+  50%
+  </span class="PorcentNumber">
+</div class="Porcent">
+</div class="ContainerPorcent">
+</div class="ContainerAllSkills">
+
+
+<div class="ContainerAllSkills">
+<span class="TextAllSkills">
+
+<img class="Espanhol" title="Espanhol" alt="Espanhol"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Espanhol.png" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Espanhol.png"----------------------------------------------------->
+
+
+ESPANHOL
+</span class="ContainerAllSkills">
+<div class="ContainerPorcent">
+<div class="Porcent" style="width:30%">
+  <span class="PorcentNumber">
+  30%
+  </span class="PorcentNumber">
+</div class="Porcent">
+</div class="ContainerPorcent">
+</div class="ContainerAllSkills">
+
+
+</div class="ContainerAll">
+
+
+</aside class="Aside">
+<!------------------------[FIM-COLUNA-ASIDE]---------------------->
+<!---------------------------------------------------------------->
+
+<!---------------------------------------------------------------->
+<!-----------------------[INICIO-COLUNA-MAIN]--------------------->
+<main class="Main">
+<!---------------------------------------------------------------->
+<!----------------------[INICIO-COLUNA-SOBRE]--------------------->
+
+<div class="ContContainerAll">
+
+<div class="TextSobreFoto1">
+
+<span class="TextSobre"> 
+WAGNER ALEXANDRE RIBEIRO
+</span class="TextSobre"> 
+
+
+<div class="ContainerImagePerfil"> 
+    
+    
+<img class="FotoPerfil" title="FotoPerfil" alt="FotoPerfil"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Wagner.jpg">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Wagner.jpg"----------------------------------------------------->
+
+
+</div class="ContainerImagePerfil">
+
+
+</div class="TextSobreFoto1">
+
+<hr>
+
+<span class="ContainerIconTitle"> 
+
+<div class="TextSobreFotoExp">
+
+<span class="TextExperience"> 
+Sobre _>
+</span class="TextExperience"> 
+
+</div class="TextSobreFotoExp">
+
+</span class="ContainerIconTitle"> 
+
+<span class="Text">
+<p>
 Atuo como (Vigilante/Segurança) a 12 anos, sou responsável por garantir a segunça de patrimónios e pessoas dentro do local, realizar rondas, triagem de pessoas e objetos, controle de portaria, acesso e saida de visitantes e monitoramento de imagens, previnir vandalismos e possíveis assaltos, furtos ou roubos. Procurando uma oportunidade para migrar de profissão e entrar na área de tecnologia na qual eu me indentifiquei e me apaixonei, quero expandir meu conhecimento na área e me tornar um desenvolvedor FullStack (Web/Mobile/Games/IA/etc...) a junção de uma mente criativa como a minha e as infinitas possibilidades que a tecnologia pode alcançar podem gerar infinitas 💡idéias.</p>
-</div>
+</span class="Text">
+
+</div class="ContContainerAll">
+
+<!-----------------------[FIM-COLUNA-SOBRE]----------------------->
+<!---------------------------------------------------------------->
 
 
+<!---------------------------------------------------------------->
+<!------------------[INICIO-COLUNA-EXPERIENCES]------------------->
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16">
-                  <div class="TitleExperiencias">
-              <i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>
-<b class="ColorExperiencias">
-Experiências</b>
-  </div class="TitleExperiencias">
-            </h2>
-            <div class="w3-container">
-                
-   <div class="TitleLogoExperiencia">
+<div class="ContContainerAll">
+
+<span class="ContainerBackGroundProgram"> 
+
+<span class="ContainerIconTitle"> 
+
+
+<img class="IconMaleta" title="MaletaTrabalho" alt="MaletaTrabalho"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Maleta.png">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Maleta.jpg"----------------------------------------------------->
+
+
+<div class="TextSobreFotoExp">
+
+<span class="TextExperience00"> 
+Experiências
+</span class="TextExperience00"> 
+
+</div class="TextSobreFotoExp">
+
+</span class="ContainerIconTitle"> 
+
+</span class="ContainerBackGroundProgram"> 
+
+<span class="TextSobre"> 
+FreeLancer Front-End
+</span class="TextSobre"> 
+
+
+<span class="Text">
+<p>Não Possuo experiência profissional com Desenvolvimento porém estou deixando o Link do meu GitHub e postando projetos e certificados de cursos e idéias desenvolvidas com a DIO, Udemy e também com outras Etechs, sempre disponível para novas oportunidades. </p>
+</span class="Text">
+
+</div class="ContContainerAll">
+
+
+<!------------------[INICIO-COLUNA-EXPERIENCES]------------------->
+<!---------------------------------------------------------------->
+
+
+<!---------------------------------------------------------------->
+<!-------------------[INICIO-COLUNA-TI-COURSES]------------------->
+
+<div class="ContContainerAll">
+
+<span class="ContainerIconTitle"> 
 <figure>
-<img class="LogoExperiencia"
-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtDVknv0LVlDx2B1x2JtK6pbobsVdmTierag&usqp=CAU" alt="LogoDio" width="280" height="80">
+
+
+<img class="Formatura" title="Formatura" alt="Formatura"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Formatura.png">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Formatura.jpg"----------------------------------------------------->
+
+</figure>
+
+<div class="TextSobreFotoExp">
+
+<span class="TextExperience"> 
+Cursos de Tecnologia (T.I)
+</span class="TextExperience"> 
+
+</div class="TextSobreFotoExp">
+
+</span class="ContainerIconTitle"> 
+
+
+
+<span class="ContainerIconTitle2"> 
+<figure>
+
+<img class="DioLogo" title="DioLogo" alt="DioLogo"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\DioLogo.png">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/DioLogo.png"----------------------------------------------------->
+
+</figure>
+
+<div class="TextSobreFotoExp2">
+
+<span class="TextExperience2"> 
+Digital Inovation One (D.I.O)
+</span class="TextExperience2"> 
+
+</div class="TextSobreFotoExp2">
+
+</span class="ContainerIconTitle2"> 
+
+
+
+<span class="ContainerIconTitle2"> 
+
+
+<img class="IconCalend" title="Calendario" alt="Calendario"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Calendario.png">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Calendario.png"----------------------------------------------------->
+
+
+<div class="TextSobreFotoExp2">
+
+<span class="TextExperience2"> 
+Inicio - 2023
+
+<span class="TextExperience3"> 
+Atual
+</span class="TextExperience3"> 
+</span class="TextExperience2"> 
+
+</div class="TextSobreFotoExp2">
+
+</span class="ContainerIconTitle2"> 
+
+<span class="Text">
+<p> Maior plataforma de educação aberta em TI da América Latina, com mais 1 milhão de usuários. 
+A DIO possui parcerias com algumas das empresas mais inovadoras do mundo, proporcionando experiências 
+de ensino imersivas e com foco em empregabilidade. Nesse contexto, seguem meus principais certificados:</p>
+</span class="Text">
+
+     
+<figure>
+
+
+<img class="Certificate" title="CertificateLogica" alt="CertificateLogica"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\CertificateLogica2.jpg"
+ width="220" height="150">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/CertificateLogica.jpg"  width="220" height="150"----------------------------------------------------->
+
 <figcaption>
-<h5><b class="ColorExperiencia">FreeLancer Front-End</b></h5></figcaption>
-</figure>
-</div>
-                
+<b>Formação em Lógica de Programação [41-Horas]</b>
+</figcaption>
 
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Abril 2023 <span class="w3-tag w3-teal w3-round">Disponível</span></h6>
-              <p>Não Possuo experiência profissional com Desenvolvimento porém estou deixando o Link do meu GitHub e postando projetos e certificados de cursos e idéias desenvolvidas com a DIO, Udemy e também com outras Etechs, sempre disponível para novas oportunidades. </p>
-              <hr>
-            </div>
-          </div>
-  
-  
-          <div class="w3-container w3-card w3-white">
-            <h2 class="w3-text-grey w3-padding-16">
-                <div class="TitleEducacao">
-              <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b class="ColorEducacao">Cursos de Tecnologia (T.I)</b>
-              </div class="TitleEducacao">
-            </h2>
-            <div class="w3-container">
-                
-              <div class="TitleLogoDio">
-<figure>
-<img class="LogoDio"
-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNtCiUopHFBFbVS288obBtswqLhebIzjq4rQ&usqp=CAU" alt="LogoDio" width="60" height="60">
-</figure>
-<div class="TitleDio">
-<h5><b>Digital Innovation One (DIO)</b></h5></div></div>
-              
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>INICIO - <span class="w3-tag w3-teal w3-round">Atual</span></h6>
-              <p>
-                Maior plataforma de educação aberta em TI da América Latina, com mais 1 milhão de usuários. 
-                A DIO possui parcerias com algumas das empresas mais inovadoras do mundo, proporcionando experiências 
-                de ensino imersivas e com foco em empregabilidade. Nesse contexto, seguem meus principais certificados:
-              </p>
-              
-<figure>
-<img src="https://hermes.dio.me/certificates/cover/7C5CC723.jpg" 
-class="Certificate"
-alt="Cerificado de Formação em Lógica de Programação DIO" width="180" height="120">
-<figcaption>
-<b class="ColorCetificateFormacao">Formação em Lógica de Programação (41h)</b></figcaption>
 </figure>
 
+</div class="ContContainerAll">
 
-      <hr>
-            </div>
-            <div class="w3-container">
+<!-------------------[INICIO-COLUNA-TI-COURSES]------------------->
+<!---------------------------------------------------------------->
 
-    <div class="TitleGraduacao">
-              <i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><h2>
-<b class="ColorGraduacao">Graduação</b>
-</h2></div class="TitleGraduacao">
 
+<!---------------------------------------------------------------->
+<!--------------------[INICIO-COLUNA-GRADUATION]------------------>
+
+<div class="ContContainerAll">
+
+<span class="ContainerIconTitle"> 
 <figure>
-<img class="LogoFacu"
-src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Logo_-_Descomplica.png" alt="LogoFacu"
-width="250" height="30">
-<figcaption><h5><b>Faculdade Digital </b></h5></figcaption>
+
+
+<img class="Formatura" title="Formatura" alt="Formatura"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Formatura.png"
+ width="80" height="80">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/CertificateLogica.png"   width="80" height="80">----------------------------------------------------->
+
 </figure>
 
+<div class="TextSobreFotoExp">
 
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023 - 2027</h6>
-              <p><h4><i class="ColorADSTitle"><b>Analise de Sistemas</b></i></h4></p>
-            </div>
-          </div>
+<span class="TextExperience"> 
+Graduação
+</span class="TextExperience"> 
 
-          <div class="w3-container w3-card w3-white w3-margin-bottom">
-            <h2 class="w3-text-grey w3-padding-16">
+</div class="TextSobreFotoExp">
+
+</span class="ContainerIconTitle"> 
+
+
+<span class="ContainerFacul">
+
+<img class="Descomplica" title="Descomplica" alt="Descomplica"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Graduacao.png"
+ width="250" height="80" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Graduacao.png"  width="250" height="80"
+align="left">----------------------------------------------------->
+
+<span class="TextExperience5"> 
+Faculdade Digital
+</span class="TextExperience5"> 
+</span class="ContainerFacul">
+
+
+<span class="ContainerIconTitle2"> 
+
+<img class="IconCalend" title="IconCalend" alt="IconCalend"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Calendario.png"
+ width="80" height="90" align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Calendario.png"
+ width="80" height="90" align="left"----------------------------------------------------->
+
+<div class="TextSobreFotoExp2">
+
+
+<span class="TextExperience2"> 
+Inicio - 2023
+
+<span class="TextExperience3"> 
+Atual
+</span class="TextExperience3"> 
+</span class="TextExperience2"> 
+
+
+<span class="TextExperience2"> 
+Curso -
+
+<span class="TextExperience3"> 
+Analise de Sistemas
+</span class="TextExperience3">
+</span class="TextExperience2">
+ 
+
+
+</div class="TextSobreFotoExp2">
+
+</span class="ContainerIconTitle2"> 
+
+
+</div class="ContContainerAll">
                 
-                
-<div class="UnionGitLogoTitle">
-<div class=" TitleIconGitHub">
+  
+<!-------------------[INICIO-COLUNA-GRADUATION]------------------->
+<!---------------------------------------------------------------->
+
+
+
+<!---------------------------------------------------------------->
+<!----------------------[INICIO-COLUNA-PROJECT]------------------->
+
+<div class="ContContainerAll">
+
+<span class="ContainerIconTitle"> 
 <figure>
-<img class="LogoGit"
-src="https://logodix.com/logo/64629.png" alt="LogoGit" width="60" height="60">
-</figure>       
-<div class="TitleProjetos"><b>Projetos</b></div>
-</div>
-          </div class="UnionGitLogoTitle">
-          
-            </h2>
-            <div class="w3-container">
-              <h6 class="w3-text-teal">
-                <i class="fa fa-github fa-fw w3-margin-right"></i>
-                <a href="https://github.com/FullStackMagickDeveloper/" target="_blank"><i><b>WAGNER_GITHUB/REPO</b></i></a>
-              </h6>
-              <hr>
-            </div>
-         <!--   < div class="w3-container">
-              < h6 class="w3-text-teal">
-                < i class="fa fa-gitlab fa-fw w3-margin-right">< /i>
-                < a href="LINK_GITLAB" target="_blank">USUARIO_GITLAB/REPO< /a>
-              </ h6>
-            </ div> -->
-          </div>
-  
-          <!-- End Right Column -->
-        </div>
-  
-        <!-- End Grid -->
-      </div>
-  
-      <!-- End Page Container -->
-    </div>
-  
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-      <p>Minhas Redes Sociais</p>
-      <a href="https://github.com/FullStackMagickDeveloper/" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-      <a href="https://www.linkedin.com/in/wagner-ribeiro-886626289?lipi=urn:li:page:d_flagship3_profile_view_base_contact_details;6T4cQSdCRoudt/2pDT1wcg==" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </footer>
-  
-  </body>
+    
 
+<img class="GitHub" title="GitHub" alt="GitHub"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\GitHub.png"
+align="left">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/GitHub.png" align="left"----------------------------------------------------->
+
+</figure>
+
+<div class="TextSobreFotoExp">
+
+<span class="TextExperience0"> 
+Projetos
+</span class="TextExperience0"> 
+
+</div class="TextSobreFotoExp">
+
+</span class="ContainerIconTitle"> 
+
+
+<a href="https://www.linkedin.com/in/wagner-ribeiro-886626289?lipi=urn:li:page:d_flagship3_profile_view_base_contact_details;6T4cQSdCRoudt/2pDT1wcg==" target="_blank">
+
+<span class="ContainerIconTitle2"> 
+
+
+<img class="IconGit" title="IconGit" alt="IconGit"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\GitHub.png"
+align="left" width="50" height="50">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/GitHub.png" align="left" width="50" height="50"----------------------------------------------------->
+
+<div class="TextSobreFotoExp2">
+
+<span class="TextExperience2"> 
+WAGNER GITHUB/REPO
+</span class="TextExperience2"> 
+
+</div class="TextSobreFotoExp2">
+
+</span class="ContainerIconTitle2"> 
+</a>
+
+</div class="ContContainerAll">
+
+
+<!----------------------[FIM-COLUNA-PROJECTS]--------------------->
+<!---------------------------------------------------------------->
+</main>
+</div class="ContainerAsideMain">
+<!-------------------------[FIM-COLUNA-MAIN]---------------------->
+<!---------------------------------------------------------------->
+
+
+<!---------------------------------------------------------------->
+<!--------------------------[INICIO-FOOTER]----------------------->
+  
+    <footer class="Footer">
+
+  <span class="SubContainerFooter">
+
+      <span class="TitleRedeSocial"> 
+      Minhas Redes Sociais</p>
+      </span class="TitleRedeSocial">
+
+<span class="ContainerRedeSocial"> 
+
+<a href="https://github.com/FullStackMagickDeveloper/" target="_blank">
+
+<img class="ImageGitHub" title="ImageGitHub" alt="ImageGitHub"
+src="
+C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\GitHub.png"
+align="left" width="60" height="60">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/GitHub.png" align="left" width="60" height="60"----------------------------------------------------->
+</a>
+      
+
+<a href="https://www.linkedin.com/in/wagner-ribeiro-886626289?lipi=urn:li:page:d_flagship3_profile_view_base_contact_details;6T4cQSdCRoudt/2pDT1wcg==" target="_blank">
+
+<img class="ImageLinkedin" title="ImageLinkedin" alt="ImageLinkedin" src="C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Linkedin2.png"
+align="left" width="75" height="70">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Linkedin2.png" align="left" width="75" height="70">----------------------------------------------------->
+</a>
+
+
+<a href="https://www.instagram.com/wagnerinthedarkness" target="_blank">
+
+<img class="ImageInstagram" title="ImageInstagram" alt="ImageInstagram" src="C:\Users\evald\OneDrive\Área de Trabalho\Wagner\ALLFILES-EDIT\CURSO-HTML5-DIO\IMG\Instagram2.png"
+align="left" width="90" height="75">
+<!--[Caminho Cell]------------------------------------------------
+src="http://localhost:2435/storage/emulated/0/ALLFILES-EDIT/CURSO-HTML5-DIO/IMG/Instagram2.png" align="left" width="80" height="75"----------------------------------------------------->
+</a>
+
+</span class="ContainerRedeSocial"> 
+
+  </span class="SubContainerFooter">
+  
+    </footer class="Footer">
+  
+<!---------------------------[FIM-FOOTER]------------------------->
+<!---------------------------------------------------------------->
+<!----------------------[CONTEUDO-BODY-FIM]----------------------->
+<!---------------------------------------------------------------->
+</body>
+<!-------------------------[BODY-FIM]----------------------------->
+<!---------------------------------------------------------------->
 </html>
+<!-------------------------[HTML-FIM]----------------------------->
+<!---------------------------------------------------------------->
+
