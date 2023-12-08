@@ -1,4 +1,4 @@
-# [CurriculumFullSatckDeveloper-Desenvolvedor](https://fullstackmagickdeveloper.github.io/CurriculumFullSatckDeveloper/CurriculumHTL2024-DEVELOPER.html)
+# [CurriculumFullSatckDeveloper-Developer](https://fullstackmagickdeveloper.github.io/CurriculumFullSatckDeveloper/CurriculumHTL2024-DEVELOPER.html)
 
 # [CurriculumFullSatckDeveloper-Vigilante](https://fullstackmagickdeveloper.github.io/CurriculumFullSatckDeveloper/CurriculumHTL2024-SECURITY.html)
 
