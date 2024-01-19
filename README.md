@@ -1,7 +1,5 @@
 # [CurriculumFullSatckDeveloper-Developer](https://fullstackmagickdeveloper.github.io/CurriculumFullSatckDeveloper/CurriculumHTML2024-DEVELOPER.html)
 
-# [CurriculumFullSatckDeveloper-Vigilante](https://fullstackmagickdeveloper.github.io/CurriculumFullSatckDeveloper/CurriculumHTML2024-SECURITY.html)
-
 
 
 # Curriculum Vitae Online
